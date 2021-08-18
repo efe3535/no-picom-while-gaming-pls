@@ -19,7 +19,7 @@ def main():
                 if process.info["name"] == "steam" and picom_running:
                     print("Steam is running. Closing your picom.")
                     if(picom_killed == False):
-                        system("killall picom")
+                        system("killall -9 picom")
                         picom_killed = True
                     else:
                         # Picom is killed, start waiting for Steam to restart Picom then.
