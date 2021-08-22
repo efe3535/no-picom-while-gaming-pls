@@ -34,7 +34,7 @@ def main():
                             else:
                                 print("Starting picom as steam is not running")
                                 import subprocess
-                                subprocess.Popen(["picom"])
+                                subprocess.Popen(["picom","--daemon"])
                                 exit(0)
             sleep(3)
 
